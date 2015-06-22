@@ -8,7 +8,7 @@ source_private_github_file <- function(repo_name, file_path, commit)
     
     # download the downloader
     print("downloading the python downloader..")
-    system('cd /tmp; curl -O https://gist.githubusercontent.com/junhe/806c57ce629e1d7035a1/raw/download_github_private_file.py')
+    system('cd /tmp; curl -O https://raw.githubusercontent.com/junhe/reproducible-research-template/master/download_github_private_file.py')
     
     # execute the downloader
     print("downloading the private file using python downloader...")
