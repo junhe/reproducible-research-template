@@ -76,7 +76,7 @@ def compose_url(hash, fpath):
 def compose_r_code_block(commit, fpath):
     code = """``` {{r fig.height=3, cache=TRUE, echo=FALSE, warning=FALSE, message=FALSE, results='hide'}}
 library(devtools)
-source_url("https://gist.github.com/junhe/1f7e41f4c2829486e46f/raw/source_private_github_file.r")
+source_url("https://raw.githubusercontent.com/junhe/reproducible-research-template/master/source_private_github_file.r")
 source_private_github_file("{repo_name}", "{file_path}", "{commit}")
 ```"""\
         .format(repo_name = get_root_dir_name(), file_path = fpath,
